@@ -106,8 +106,10 @@ def rules(currentPlayer1,currentPlayer2):
         
     if(pointsP1>pointsP2):
         print("JAY wins")
-    else:
+    if(pointsP1<pointsP2):
         print("PHIL wins")
+    if(pointsP1==pointsP2):
+        print("Game tied")
 
 def playGame(currentPlayer1,currentPlayer2):
     global round
